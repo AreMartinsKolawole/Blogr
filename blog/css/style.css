@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  list-style: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+
+.body {
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(240, 10%, 16%);
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  display: flex;
+  margin: 0 30px;
+  padding-top: 30px;
+  align-items: center;
+}
+
+.navbar .nav-img h1 {
+  margin: 0px 30px;
+  font-weight: bolder;
+  letter-spacing: 0.5rem;
+  color: hsl(356, 100%, 66%);
+}
+
+.navbar .nav-links li {
+  margin-left: 60px;
+  font-weight: bolder;
+}
+
+.navbar .nav-links li a {
+  color: hsl(0, 0%, 100%);
+}
+
+.navbar .nav-links li::after {
+  content: '';
+  background: hsl(356, 100%, 66%);
+  display: block;
+  transition: 0.5s;
+  width: 0px;
+  height: 1px;
+  margin: 1px;
+}
+
+.navbar .nav-links li:hover::after {
+  width: 100%;
+}
+
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  margin: 30px 60px;
+  color: black;
+  width: 50%;
+}
+
+.content h3 {
+  color: grey;
+  font-size: 2vmin;
+  font-weight: 900;
+}
+
+.content h1 {
+  font-size: 7vmin;
+  margin: 15px 0px;
+  color: white;
+}
+
+.content h5 {
+  color: grey;
+  font-size: 2vmin;
+  margin-bottom: 20px;
+}
+
+.content h5 a {
+  text-decoration: underline;
+  color: hsl(356, 100%, 66%);
+}
+
+#login {
+  align-items: center;
+  margin-left: 33%;
+  margin-top: 50px;
+}
+
+form {
+  color: white;
+}
+
+form input {
+  padding: 10px;
+  margin: 5px;
+}
+
+form i {
+  margin-right: 8px;
+}
+
+form .dwn input {
+  width: 52%;
+}
+
+
+#move {
+  margin-left: 25px;
+  margin-top: 15px;
+}
+
+
+.submit button {
+  margin-top: 20px;
+  margin-left: 25px;
+  padding: 10px;
+  border-radius: 70px;
+  border: none;
+  color: white;
+  width: 300px;
+  cursor: pointer;
+}
+
+.submit button:hover {
+  color: black;
+  background: white;
+  font-weight: bolder;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.submit button {
+  background-color: hsl(356, 100%, 66%);
+}
+
+
+
+.side-img img {
+  height: auto;
+  width: 90%;
+}
+
+.middle h4,
+p {
+  text-align: center;
+  margin: 30px 30%;
+}
+
+.middle h4 {
+  font-size: 4vmin;
+  text-shadow: 0 0 3px hsl(356, 100%, 66%);
+}
+
+.middle p {
+  margin-top: 0;
+  color: grey;
+}
+
+.middle .box {
+  display: flex;
+  margin: 40px 18%;
+}
+
+
+.box .row {
+  margin: 0px 5%;
+  background-color: whitesmoke;
+  padding: 40px;
+  width: auto;
+  height: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+.box .row:hover {
+  box-shadow: -0.5px 0 hsl(356, 100%, 66%),
+    0 0.5px hsl(356, 100%, 66%),
+    0.5px 0 hsl(356, 100%, 66%),
+    0 -0.5px hsl(356, 100%, 66%);
+}
+
+.box .row p {
+  margin: 20px 0px;
+}
+
+.box .row button {
+  background: hsl(356, 100%, 66%);
+  color: white;
+  border: none;
+  padding: 3%;
+  font-size: 2vmin;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.box .row button:hover {
+  color: black;
+  background: white;
+  font-weight: bolder;
+}
+
+.middle .box .row img {
+  height: auto;
+  width: 100px;
+  margin-left: 2px;
+}
+
+#f {
+  margin-top: 20px;
+}
+
+#s {
+  margin-top: 80px;
+}
+
+#t {
+  margin-top: 150px;
+}
+
+#forl {
+  text-align: center;
+  align-items: center;
+  margin: 30px;
+}
+
+#forl h2 {
+  font-size: 4vmin;
+  text-shadow: 0 0 3px hsl(356, 100%, 66%);
+}
+
+#forl .con {
+  margin-top: 50px;
+}
+
+#forl .image img {
+  height: 90vh;
+  width: 80vw;
+  margin-left: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+.fitter {
+  margin-top: 100px;
+  background-color: hsl(240, 10%, 16%);
+  height: 200px;
+  width: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.fitter p {
+  letter-spacing: 0.3rem;
+  padding: 10px;
+}
+
+.fitter h4 {
+  font-size: 7vmin;
+}
+
+.fitter .links {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 500px;
+  margin-top: 5 0px;
+}
+
+.fitter .links a {
+  color: white;
+  margin-top: 50px;
+}
